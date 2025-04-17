@@ -6,28 +6,50 @@ body {
 }
 
 #tentacles {
-    width: 50px;
+    width: 70px;
 }
 
 .header {
     display: flex;
     background-color: lightblue;
-    padding: 1%;
+    background-image: url('./assets/waves.svg');
+    aspect-ratio: 9/2;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 0%;
     align-items: center;
+    margin-bottom: 0;
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
 }
+
+@font-face {
+    font-family: wawa;
+    src: url(./assets/wawaFont.ttf);
+  }
+.header-text{
+    font-family: wawa;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+h1, h2, h3{
+    font-family: wawa;
+    color: aliceblue;
+}
+
 
 .stats-container {
     display: flex;
     align-items: baseline;
 }
 
-.stats-container:hover{
+.stats-card:hover{
     box-shadow:  0 0 30px
     lightblue ;
     cursor: pointer;
+    color: white;
 }
 
 .stats-card {
@@ -69,6 +91,16 @@ body {
     box-shadow: 0 0 30px lightblue;
 }
 
+.wave {
+    
+    width: 100%;
+    
+    background-position: center;    
+    
+    
+    margin-bottom: 0;
+}
+
 #button-container {
     text-align: center;
 }
@@ -82,5 +114,11 @@ button {
 }
 button:hover {
     cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    box-shadow: 0 0 30px white;
+    
+    background-color: white;  
+}
+
+#description-container {
+    margin-top: 0;
 }
